@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohamud Dahir</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body data-theme="light">
+    <nav class="navbar navbar-expand-lg sticky-top py-3">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex align-items-center gap-2 fw-bold"
+          href="index.html"
+        >
+          <span class="bg-primary text-white px-3 py-1 rounded-3 fw-bold"
+            >MD</span
+          >
+          <span class="fs-4 fw-bold text-main">Mohamud Dahir</span>
+        </a>
+
+        <div class="d-flex align-items-center gap-2 order-lg-3">
+          <button
+            class="theme-toggle"
+            id="themeToggleBtn"
+            aria-label="Toggle Theme"
+          >
+            <i class="fa-solid fa-moon" id="themeIcon"></i>
+          </button>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <i class="fa-solid fa-bars fs-4 text-main"></i>
+          </button>
+        </div>
+
+        <div
+          class="collapse navbar-collapse justify-content-center order-lg-2"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-1 mt-3 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html"
+                ><i class="fa-solid fa-house me-1"></i> Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"
+                ><i class="fa-solid fa-user me-1"></i> About Me</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"
+                ><i class="fa-solid fa-envelope me-1"></i> Contact</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html"
+                ><i class="fa-solid fa-photo-film me-1"></i> Gallery</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-5">
+      <section id="home-page">
+        <div class="hero-banner text-center text-lg-start mb-5">
+          <div class="row align-items-center gy-4">
+            <div class="col-lg-7">
+              <span
+                class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 rounded-pill mb-3 fw-semibold"
+              >
+                <i class="fa-solid fa-graduation-cap me-1"></i> Business
+                Computing Student
+              </span>
+              <h1 class="display-4 fw-bold mb-3">
+                l'm student in Bugema University
+              </h1>
+              <p class="lead text-muted mb-4">
+                My name is Mohamud Dahir, and my journey is a story of growth
+                learning and determination. Through my studies in Business
+                Computing at Bugema University I have continued to develop my
+                skills discover my purpose and work toward my dreams. I believe
+                every challenge is an opportunity to learn and my goal is to use
+                technology and knowledge to make a positive difference in my
+                community.
+              </p>
+              <div
+                class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start"
+              >
+                <a
+                  href="about.html"
+                  class="btn btn-primary btn-lg rounded-pill px-4 py-2"
+                >
+                  Learn More About Me
+                  <i class="fa-solid fa-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-5 text-center">
+              <img
+                src="images/mohamed2.jpeg"
+                alt="Mohamud Dahir Professional Headshot"
+                class="rounded-circle shadow-lg img-fluid border border-4 border-white"
+                style="
+                  width: 270px;
+                  height: 270px;
+                  object-fit: cover;
+                  object-position: center 20%;
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document
+        .getElementById("themeToggleBtn")
+        .addEventListener("click", function () {
+          var dark = document.body.getAttribute("data-theme") === "dark";
+          document.body.setAttribute("data-theme", dark ? "light" : "dark");
+          document.getElementById("themeIcon").className = dark
+            ? "fa-solid fa-moon"
+            : "fa-solid fa-sun";
+        });
+    </script>
+  </body>
+</html>
